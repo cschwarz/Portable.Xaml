@@ -537,8 +537,7 @@ namespace Portable.Xaml
 			else if (m2.RequiresChildNode)
 				return -1;
 
-			// then, compare names.
-			return String.CompareOrdinal(m1.Name, m2.Name);
+			return 0;
 		}
 
 		internal static string GetInternalXmlName (this XamlMember xm)
